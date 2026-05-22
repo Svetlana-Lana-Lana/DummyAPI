@@ -1,0 +1,1481 @@
+{
+  "info": {
+    "_postman_id": "5ed49366-c47a-4d04-b514-3d2b74bbd9cf",
+    "name": "Post",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "33591117"
+  },
+  "item": [
+    {
+      "name": "GetListPosts",
+      "item": [
+        {
+          "name": "GetPostList",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(wrongMethod - POST)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(Page-0)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?page=0",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(Page-1)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?page=1",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(Page-999)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?page=999",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "999"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(Page-1000)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?page=1000",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1000"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(PageLatin-two)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?page=two",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "two"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(WithoutPage)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(Limit-0)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?limit=0",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "0"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(Limit-4)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?limit=4",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "4"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(Limit-5)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?limit=5",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "5"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(Limit-50)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?limit=50",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "50"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(Limit-51)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?limit=51",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "51"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(LimitLatin-seven)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?limit=seven",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "seven"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(WithoutLimit)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(Created-0)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?created=0",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "created",
+                  "value": "0"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(Created-1)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?created=1",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "created",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(Created-2)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?created=2",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "created",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(CreatedLatin-one)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post?created=one",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ],
+              "query": [
+                {
+                  "key": "created",
+                  "value": "one"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(WithoutCreated)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPostList(AnswerIsList[PostPreview])",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/post",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "CreatePost",
+      "item": [
+        {
+          "name": "CreatePost",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Номер 3 через API.\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(wrongMethod - GET)",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Номер 4 через API.\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 55,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(text-0symbol)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(text-5symbols)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Номер\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(text-6symbols)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Номер5\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(text-50symbols)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост номер6 через API с текстом из пятидесяти букв\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(text-51symbols)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост Пост Пост Пост Пост Пост Пост Пост Пост Пост П\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(text-number)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": 123456,\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(text-array)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": [\"post1\", \"post2\"],\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(text-object)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": {\r\n        \"title\": \"Post 1\"\r\n       \r\n    },\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(text-boolean)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": true,\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(WithoutText)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(image-realURL)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с картинкой\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(image-MistakeURL)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с картинкой\",\r\n    \"image\": \"tps://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(image-WebSiteURL)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с картинкой\",\r\n    \"image\": \"https://involta.ru/tools/length-chars/\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(image-number)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с картинкой\",\r\n    \"image\": 123456789,\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(image-array)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с картинкой\",\r\n    \"image\": [\"img1\", \"img2\"],\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(image-object)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с картинкой\",\r\n    \"image\": {\r\n        \"url\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\"\r\n    },\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(image-boolean)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с картинкой\",\r\n    \"image\": true,\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(WithoutImage)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с картинкой\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(tags-fullArray)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с тэгами\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(tags-emptyArray)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с тэгами, пустой массив\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(tags-ArrayNumbers)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с тэгами, массив чисел\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [1, 2],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(tags-string)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с тэгом строкой\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": \"tag1\",\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(tags-number)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с тэгом числом\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": 1,\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(tags-object)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с тэгом объект\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": {\r\n        \"tags\": \"tag1\"\r\n    },\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(tags-boolean)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост с тэгом boolean\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": true,\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(WithoutTags)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост без тэгов\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(owner-realUserId)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост без тэгов\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(owner-unrealUserId)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост несуществующего пользователя\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": \"60d0fe4f5311236168a109cn\"  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(owner-number)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост несуществующего пользователя цифрой\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": 6\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(owner-array)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост несуществующего пользователя массив\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\", \"tag2\"],\r\n    \"owner\": [\"6a02d72cbffcca9385e893a7\"]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(owner-object)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост несуществующего пользователя объект\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\"],\r\n    \"owner\": {\r\n        \"owner\": \"6a02d72cbffcca9385e893a7\"\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(owner-boolean)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост несуществующего пользователя boolean\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\"],\r\n    \"owner\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(WithoutOwner)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост несуществующего пользователя boolean\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\"]\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreatePost(AnswerPost{UserPreview})",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"text\": \"Пост, проверка ответа\",\r\n    \"image\": \"https://www.magnific.com/ru/premium-photo/blue-snowdrops-spring-forest-first-flowers-spring-close-up-with-soft-sunlight_3694554.htm#fromView=keyword&page=1&position=32&uuid=eba56f1f-8dde-4f8d-a69d-8e0d0c1d9c2a&query=%D0%A0%D0%B0%D0%BD%D0%BD%D1%8F%D1%8F+%D0%B2%D0%B5%D1%81%D0%BD%D0%B0\",\r\n    \"likes\": 0,\r\n    \"tags\": [\"tag1\"],\r\n    \"owner\": \"6a02d72cbffcca9385e893a7\"\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/post/create",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "post",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "app-id",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{app-id}}",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
