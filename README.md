@@ -3,7 +3,15 @@
 В данном проекте разработана документация для тестироания через API объекта Post. На основе представленной на сайте документации составлена майнд-карта. На сонове майнд-карты разработан список тестов для коллекции запросов в POSRMAN. Для изучения объекта Post создано окружение - DummyAPI.
 Для проверки всего цикла запросов, доступного для объекта Post (получение списка постов, создание поста, вывод поста по id, редактирование и удаление поста), создана коллекция запросов с автотестами.
 
-## Огравление
+## Оглавление
+1. [Описание проекта](https://github.com/Svetlana-Lana-Lana/DummyAPI#%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0)
+     1. [Post](https://github.com/Svetlana-Lana-Lana/DummyAPI#post)
+          1. [GET /post (Get list)](https://github.com/Svetlana-Lana-Lana/DummyAPI#get-post-get-list)
+          2. [POST /post/create (Create Post)](https://github.com/Svetlana-Lana-Lana/DummyAPI#post-postcreate-create-post)
+2. [Майнд-карта](https://github.com/Svetlana-Lana-Lana/DummyAPI#%D0%BC%D0%B0%D0%B9%D0%BD%D0%B4-%D0%BA%D0%B0%D1%80%D1%82%D0%B0)
+3. [Коллекции POSTMAN](https://github.com/Svetlana-Lana-Lana/DummyAPI#%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-postman)
+4. [Автотесты](https://github.com/Svetlana-Lana-Lana/DummyAPI#%D0%B0%D0%B2%D1%82%D0%BE%D1%82%D0%B5%D1%81%D1%82%D1%8B)
+
 
 ## Описание проекта
 Сайт https://dummyapi.io/. Dummy API - это готовый к использованию тренировочный API с большим объёмом данных (пользователи, посты, изображения, комментарии) для разработки, тестирования и обучения.
@@ -55,6 +63,7 @@ lastName: string(length: 2-50)
 picture: string(url)
 }
 ```
+
 #### POST /post/create (Create Post)
 Создает новый пост. Возвращает данные о посте.
 
@@ -104,8 +113,8 @@ picture: string(url)
 Также майнд-карту можно [скачать](https://github.com/Svetlana-Lana-Lana/DummyAPI/blob/main/Dummy%20API%20Post.xmind)
 
 ## Коллекции POSTMAN
-
 Коллекция запросов для тестирования вывода списка постов и публикации постов представлена здесь [скачать коллекцию](https://github.com/Svetlana-Lana-Lana/DummyAPI/blob/main/Post.postman_collection.json)
 Окружение, созданное для проведения тестирования, представлено здесь [посмотреть окружение](https://github.com/Svetlana-Lana-Lana/DummyAPI/blob/main/DummyAPI.postman_environment_v2.json)
 
 ## Автотесты
+Коллекция для тестирования всего цикла запросов, доступных для объекта Post, с использованием автотестов представлена здесь [посмотреть коллекцию](https://github.com/Svetlana-Lana-Lana/DummyAPI/blob/main/PostCase.postman_collection.json)
